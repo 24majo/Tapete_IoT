@@ -1,4 +1,4 @@
-import fondo from '../images/Fondos/FondoInicioSesion.jpg'
+import fondo from '../../images/Fondos/fondoInicioSesion.jpg'
 import { useState } from 'react';
 import { Button, PasswordInput, TextInput, Title } from '@mantine/core';
 import { IconLock } from '@tabler/icons-react';

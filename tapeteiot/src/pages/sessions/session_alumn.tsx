@@ -1,11 +1,13 @@
 import fondo from '../../images/Fondos/fondoInicioSesion.jpg'
-import { useState } from 'react';
-import { Button, PasswordInput, TextInput, Title } from '@mantine/core';
-import { IconLock } from '@tabler/icons-react';
+import { useState } from 'react'
+import { Button, PasswordInput, TextInput, Title } from '@mantine/core'
+import { IconLock } from '@tabler/icons-react'
+import { useNavigate } from "react-router-dom"
 
 function Inicio_Alumno() {
-  const [modoRecuperacion, setModoRecuperacion] = useState(false);
-  const icon = <IconLock size={18} stroke={1.5} />;
+  const [modoRecuperacion, setModoRecuperacion] = useState(false)
+  const icon = <IconLock size={18} stroke={1.5} />
+  const navigate = useNavigate()
 
   return (
     <div
@@ -42,7 +44,7 @@ function Inicio_Alumno() {
               placeholder="8 caracteres mínimo"
               style={{ marginTop: '3vh' }}
             />
-            <Button fullWidth mt="xl" size="md" variant="filled" color="yellow">
+            <Button onClick={() => navigate("/MenuSeleccion")} fullWidth mt="xl" size="md" variant="filled" color="yellow">
               Ingresar
             </Button>
           </>

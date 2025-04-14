@@ -1,10 +1,18 @@
-![Logo](/tapeteiot/src/images/logoLetras.png)
-
+![Logo](/frontend/src/images/logoLetras.png)
+---
 # 🧩 Tapete IoT - Sistema Web Interactivo con Integración IoT
 
 **Tapete IoT** es una plataforma educativa interactiva que conecta un sistema físico (tablero IoT) con una interfaz web para apoyar el aprendizaje de números y letras en niños de primer grado de primaria. El objetivo es crear una experiencia didáctica divertida y tecnológica.
 
----
+
+## 👥 Autores
+- **Albor Salazar Cinthia Lucero**
+  - Frontend Developer  
+- **Guerrero Arenas Alondra Guadalupe María José**
+  - Backend Developer
+  - QA & Testing
+  - Database Manager
+
 
 ## 📚 Descripción General
 
@@ -15,10 +23,9 @@ Este proyecto está dividido en dos partes:
 | [`frontend/`](./frontend) | Aplicación web desarrollada en **React + Vite** con interfaz moderna usando **Mantine UI** |
 | [`backend/`](./backend)   | Servidor Express en **Node.js**, conectado a **MySQL** (con XAMPP), que gestiona rutas y datos del sistema |
 
----
+
 
 ## 🚀 ¿Cómo iniciar el proyecto?
-
 ### 1. Clona el repositorio
 ```bash
 git clone https://github.com/24majo/Tapete_IoT.git

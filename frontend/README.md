@@ -1,13 +1,6 @@
 ![Logo](/tapeteiot/src/images/logoLetras.png)
 **Sistema de Interacción Web, compatible con Tablero IoT, para apoyo didáctico del aprendizaje e identificación de números y letras, enfocado a niños de 1ro de primaria.**
 
-## 👥 Autores
-- **Albor Salazar Cinthia Lucero**
-  - Frontend Developer  
-- **Guerrero Arenas Alondra Guadalupe María José**
-  - Backend Developer
-  - QA & Testing
-  - Database gestor
 
 ## ⚙️ Tecnologías utilizadas
 
@@ -25,9 +18,7 @@
 
 2. Instalar las dependencias necesarias:
   ```bash
-  npm install react react-dom react-router-dom @mantine/core @mantine/hooks
-
-  npm install -D typescript @types/react @types/react-dom @types/react-router-dom
+  npm install 
   ```
 
 3. Ejecutar el proyecto:

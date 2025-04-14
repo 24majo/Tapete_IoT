@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+![Logo](/tapeteiot/src/images/logoLetras.png)
+**Sistema de Interacción Web, compatible con Tablero IoT, para apoyo didáctico del aprendizaje e identificación de números y letras, enfocado a niños de 1ro de primaria.**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 👥 Autores
+- **Albor Salazar Cinthia Lucero**
+  - Frontend Developer  
+- **Guerrero Arenas Alondra Guadalupe María José**
+  - Backend Developer
+  - QA & Testing
+  - Database gestor
 
-Currently, two official plugins are available:
+## ⚙️ Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Node.js
+- PHP
+- CSS
 
-## Expanding the ESLint configuration
+## 🚀 Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clona el repositorio:
+  ```bash
+  git clone https://github.com/24majo/Tapete_IoT
+  ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Instalar las dependencias necesarias:
+  ```bash
+  npm install react react-dom react-router-dom @mantine/core @mantine/hooks
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  npm install -D typescript @types/react @types/react-dom @types/react-router-dom
+  ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Ejecutar el proyecto:
+  ```bash
+  npm run dev
+  ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📦 Resumen de dependencias
+| Paquete | Uso |
+|:--------|:----|
+|react, react-dom|Base del proyecto React|
+|react-router-dom|Navegación entre rutas|
+|@mantine/core|Componentes UI de Mantine|
+|@mantine/hooks|Hooks útiles de Mantine|
+|typescript|Soporte para TypeScript|
+|@types/react, etc|Tipos necesarios para trabajar con TypeScript + React
+---
+
+

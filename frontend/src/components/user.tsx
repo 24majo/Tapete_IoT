@@ -1,5 +1,6 @@
 import { IconChevronUp, IconUser, IconLogin } from '@tabler/icons-react'
 import { Avatar, Group, Text, UnstyledButton, Menu } from '@mantine/core'
+import { useNavigate } from "react-router-dom"
 import person from '../images/Recursos/SesionNiño.png'
 import classes from '../styles/User.module.css'
 
@@ -8,9 +9,10 @@ interface UserProps {
 }
 
 export function User({ isNavbarOpened }: UserProps) {
+    const navigate = useNavigate()
     return (
         <>
-            <Menu shadow="md" width={180} withArrow>
+            <Menu shadow="md" withArrow>
                 <Menu.Target>
                     <UnstyledButton className={classes.user}>
                         <Group>
@@ -44,12 +46,13 @@ export function User({ isNavbarOpened }: UserProps) {
 
                 <Menu.Dropdown>
                     <Menu.Label>Opciones</Menu.Label>
-                    <Menu.Item leftSection={<IconUser size={18} />}>
+                    <Menu.Item leftSection={<IconUser size={18}/>} onClick={() => navigate("/MyPerfil")}>
                         Ver perfil
                     </Menu.Item>
                     <Menu.Item
                         color="red"
                         leftSection={<IconLogin size={18} />}
+                        onClick={() => navigate("/")}
                     >
                         Cerrar sesión
                     </Menu.Item>

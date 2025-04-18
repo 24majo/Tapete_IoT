@@ -13,23 +13,28 @@ function Menu_Numbers(){
     const juegos = [
         {
             image: adivinar,
-            titulo: 'Adivina el número'
+            titulo: 'Adivina el número',
+            ruta: '/JuegoNumeros1'
         },
         {
             image: secuencia,
-            titulo: 'Secuencias'
+            titulo: 'Secuencias',
+            ruta: '/JuegoNumeros2'
         },
         {
             image: decena,
-            titulo: 'Completar decenas'
+            titulo: 'Completar decenas',
+            ruta: '/JuegoNumeros3'
         },
         {
             image: suma,
-            titulo: 'Sumas'
+            titulo: 'Sumas',
+            ruta: '/JuegoNumeros4'
         },
         {
             image: resta,
-            titulo: 'Restas'
+            titulo: 'Restas',
+            ruta: '/JuegoNumeros5'
         }
     ]
 
@@ -83,7 +88,7 @@ function Menu_Numbers(){
                             flexDirection: 'column',
                         }}>
                             <Text fw={500} size='2.5vh'>{juegos.titulo}</Text>
-                            <Button style={{ backgroundColor: '#f5a00d' }}>Jugar</Button>
+                            <Button onClick={() => navigate(juegos.ruta)} style={{ backgroundColor: '#f5a00d' }}>Jugar</Button>
                         </Group>
                         </Card>
                     ))}
